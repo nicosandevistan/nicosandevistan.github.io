@@ -1,0 +1,737 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Nico Rojas Taborda">
+<meta property="og:description" content="Economics, statistics and biochemistry at UMass Amherst. Research and strategy in the life sciences.">
+<meta property="og:type" content="website">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='11' fill='none' stroke='%2314213a' stroke-width='3'/%3E%3Cpath d='M16 5a11 11 0 0 1 11 11' fill='none' stroke='%232c5ec8' stroke-width='5'/%3E%3Cpath d='M9 24a11 11 0 0 1-4-8' fill='none' stroke='%232b7a4b' stroke-width='5'/%3E%3C/svg%3E">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Nico Rojas Taborda</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Nico Rojas Taborda: economics, statistics and biochemistry at UMass Amherst. Life sciences strategy, research and consulting.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,300..800&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap">
+<style>
+/* Layout: a plasmid map of Nico's career is the hero (time runs clockwise from ori = Revere);
+   below it, a quiet two-column record: dates on the left, entries on the right, each tagged with the map's feature color. */
+:root {
+  --paper: #edf0f4;
+  --surface: #f8fafc;
+  --ink: #14213a;
+  --muted: #56627a;
+  --rule: #cdd4de;
+  --research: #2b7a4b;
+  --industry: #2c5ec8;
+  --edu: #a8740c;
+  --work: #8a4884;
+  --display: "Bricolage Grotesque", "Arial Narrow", system-ui, sans-serif;
+  --body: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --step-0: 1.0625rem;
+  --step-1: 1.3125rem;
+  --step-2: 1.75rem;
+  --step-3: 2.5rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --paper: #0e1626; --surface: #142036; --ink: #e4e9f1; --muted: #98a4ba; --rule: #2a3851;
+    --research: #5cc489; --industry: #86a8f6; --edu: #e2b04a; --work: #d38ecb;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --paper: #0e1626; --surface: #142036; --ink: #e4e9f1; --muted: #98a4ba; --rule: #2a3851;
+  --research: #5cc489; --industry: #86a8f6; --edu: #e2b04a; --work: #d38ecb;
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--body);
+  font-size: var(--step-0);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+a:hover { text-decoration-thickness: 2px; }
+:focus-visible { outline: 2px solid var(--industry); outline-offset: 3px; border-radius: 2px; }
+
+.wrap {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+
+/* ---------- Hero ---------- */
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 5fr) minmax(0, 7fr);
+  gap: 32px;
+  align-items: center;
+  padding-block: 56px 32px;
+}
+.hero-text { min-width: 0; }
+.name {
+  font-family: var(--display);
+  font-weight: 700;
+  font-variation-settings: "wdth" 78, "opsz" 96;
+  font-size: clamp(3.25rem, 7.4vw, 6.25rem);
+  line-height: 0.88;
+  letter-spacing: -0.02em;
+  margin: 0 0 28px;
+}
+.name span { display: block; }
+.lede {
+  font-size: var(--step-1);
+  line-height: 1.5;
+  max-width: 30em;
+  margin: 0 0 28px;
+}
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  font-family: var(--display);
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 0 0 32px;
+  padding: 0;
+  list-style: none;
+}
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 18px;
+  font-family: var(--display);
+  font-size: 0.9375rem;
+  color: var(--muted);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.legend li { display: flex; align-items: center; gap: 8px; }
+.swatch { width: 18px; height: 10px; flex: none; clip-path: polygon(0 0, 70% 0, 100% 50%, 70% 100%, 0 100%); }
+.legend .planned-key .swatch { background: none; border: 1.5px dashed var(--muted); clip-path: none; height: 10px; }
+.map-note { font-family: var(--display); font-size: 0.875rem; color: var(--muted); margin: 14px 0 0; max-width: 34em; }
+
+.map-box { position: relative; min-width: 0; }
+.map-box svg { display: block; width: 100%; height: auto; overflow: visible; }
+.readout {
+  position: absolute;
+  left: 50%; top: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  text-align: center;
+  pointer-events: none;
+  font-family: var(--display);
+}
+.readout .r-name { font-size: clamp(1.125rem, 2.3vw, 1.75rem); font-weight: 700; line-height: 1.05; font-variation-settings: "wdth" 85; }
+.readout .r-role { font-size: clamp(0.8125rem, 1.25vw, 1rem); color: var(--muted); line-height: 1.3; margin-top: 6px; }
+.readout .r-date { font-size: clamp(0.8125rem, 1.2vw, 0.9375rem); font-weight: 600; margin-top: 6px; font-variant-numeric: tabular-nums; }
+
+.backbone { fill: none; stroke: var(--ink); stroke-width: 2.5; }
+.tick { stroke: var(--muted); stroke-width: 1; }
+.tick.year { stroke: var(--ink); stroke-width: 1.5; }
+.year-label { fill: var(--muted); font-family: var(--display); font-size: 15px; font-weight: 500; font-variant-numeric: tabular-nums; }
+.feat path { stroke: var(--paper); stroke-width: 1; transition: opacity .15s; }
+.feat .planned { fill-opacity: 0.28; stroke-dasharray: 4 3; stroke-width: 1.5; }
+.feat:focus { outline: none; }
+.feat:focus-visible path { stroke: var(--ink); stroke-width: 2.5; }
+.map-box.has-active .feat:not(.active) path { opacity: 0.25; }
+.leader { stroke: var(--muted); stroke-width: 1; fill: none; }
+.flabel { fill: var(--ink); font-family: var(--display); font-size: 17px; font-weight: 600; }
+.flabel tspan.sub { fill: var(--muted); font-weight: 400; font-size: 14px; }
+.now-line { stroke: var(--ink); stroke-width: 1.5; stroke-dasharray: 2 3; }
+.now-label { fill: var(--ink); font-family: var(--display); font-size: 14px; font-weight: 700; }
+.ori { fill: var(--ink); }
+.ori-label { fill: var(--ink); font-family: var(--display); font-size: 15px; font-weight: 600; }
+.ori-label tspan { fill: var(--muted); font-weight: 400; }
+
+@media (prefers-reduced-motion: no-preference) {
+  .boot .backbone { stroke-dasharray: 1260; stroke-dashoffset: 1260; animation: draw 900ms ease-out forwards; }
+  .boot .feat { opacity: 0; animation: pop 260ms ease-out forwards; }
+  @keyframes draw { to { stroke-dashoffset: 0; } }
+  @keyframes pop { to { opacity: 1; } }
+}
+
+@media (max-width: 860px) {
+  .hero { grid-template-columns: 1fr; padding-block: 36px 16px; gap: 20px; }
+  .map-box { max-width: 560px; width: 100%; margin: 0 auto; }
+  .flabel, .leader { display: none; }
+  .now-label { font-size: 17px; }
+  .readout { width: 52%; }
+}
+
+/* ---------- Record ---------- */
+main { padding-block: 24px 40px; }
+section { padding-block: 40px; border-top: 1px solid var(--rule); }
+h2 {
+  font-family: var(--display);
+  font-weight: 700;
+  font-variation-settings: "wdth" 85;
+  font-size: var(--step-3);
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  margin: 0 0 28px;
+  text-wrap: balance;
+}
+.entries { display: grid; gap: 36px; }
+.entry {
+  display: grid;
+  grid-template-columns: 11rem minmax(0, 1fr);
+  gap: 4px 32px;
+  scroll-margin-top: 24px;
+  border-radius: 4px;
+  transition: background-color .2s;
+}
+.entry.lit { background: color-mix(in srgb, var(--surface) 80%, transparent); box-shadow: 0 0 0 12px color-mix(in srgb, var(--surface) 80%, transparent); }
+.when {
+  font-family: var(--display);
+  font-size: 0.9375rem;
+  font-weight: 500;
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+  padding-top: 5px;
+}
+.when .place { display: block; font-weight: 400; }
+.what { min-width: 0; max-width: 46rem; }
+.org {
+  font-family: var(--display);
+  font-size: var(--step-1);
+  font-weight: 700;
+  line-height: 1.25;
+  margin: 0;
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.org .swatch { transform: translateY(-2px); }
+.role { margin: 2px 0 0; font-style: italic; color: var(--muted); }
+.what ul { margin: 10px 0 0; padding-left: 1.1em; }
+.what li { margin-top: 6px; }
+.what li::marker { color: var(--muted); }
+.what p.note { margin: 10px 0 0; }
+
+.c-research .swatch { background: var(--research); }
+.c-industry .swatch { background: var(--industry); }
+.c-edu .swatch { background: var(--edu); }
+.c-work .swatch { background: var(--work); }
+.c-planned .swatch { background: none; border: 1.5px dashed var(--industry); clip-path: none; }
+
+.cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: 28px 40px;
+}
+.cols h3 { font-family: var(--display); font-size: var(--step-0); font-weight: 700; margin: 0 0 6px; }
+.cols p { margin: 0; }
+.awards { list-style: none; margin: 0; padding: 0; display: grid; gap: 18px; max-width: 46rem; }
+.awards strong { font-family: var(--display); font-weight: 700; font-size: var(--step-0); display: block; }
+.awards span { color: var(--muted); }
+
+footer { border-top: 1px solid var(--rule); padding-block: 36px 56px; }
+.foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px 40px; align-items: baseline; }
+.foot p { margin: 0; }
+.foot .big { font-family: var(--display); font-size: var(--step-2); font-weight: 700; font-variation-settings: "wdth" 85; line-height: 1.1; }
+.email { font-family: var(--display); font-weight: 500; user-select: all; }
+.copy {
+  font: 500 0.875rem var(--display);
+  color: var(--ink);
+  background: transparent;
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  padding: 4px 12px;
+  margin-left: 8px;
+  cursor: pointer;
+}
+.copy:hover { border-color: var(--ink); }
+.small { color: var(--muted); font-size: 0.9375rem; }
+
+@media (max-width: 640px) {
+  .entry { grid-template-columns: 1fr; }
+  .when { padding-top: 0; order: 0; }
+  .when .place { display: inline; }
+  .when .place::before { content: ", "; }
+  h2 { font-size: var(--step-2); }
+}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <header class="hero">
+    <div class="hero-text">
+      <h1 class="name"><span>Nico</span><span>Rojas Taborda</span></h1>
+      <p class="lede">I study managerial economics and statistics at UMass Amherst, with a minor in biochemistry. I've spent four years moving between research labs and business work in the life sciences, and I'm building toward strategy and investing in biotech.</p>
+      <ul class="contact">
+        <li><a href="mailto:nicolasrojastaborda@gmail.com">Email</a></li>
+        <li><a href="https://www.linkedin.com/in/nicort" target="_blank" rel="noopener">LinkedIn</a></li>
+        <li><a href="https://github.com/nicosandevistan" target="_blank" rel="noopener">GitHub</a></li>
+      </ul>
+      <ul class="legend" aria-label="Map key">
+        <li class="c-research"><span class="swatch"></span>Research</li>
+        <li class="c-industry"><span class="swatch"></span>Industry and consulting</li>
+        <li class="c-edu"><span class="swatch"></span>Education</li>
+        <li class="c-work"><span class="swatch"></span>Work and community</li>
+        <li class="planned-key"><span class="swatch"></span>Planned</li>
+      </ul>
+      <p class="map-note">The map reads like a plasmid map: time runs clockwise from the origin in Revere, 2022, and each arrow is one role. Point at an arrow to see what it is.</p>
+    </div>
+    <div class="map-box" id="mapBox">
+      <svg id="map" viewBox="40 60 800 660" role="group" aria-label="Career timeline drawn as a circular plasmid map, 2022 to 2028"></svg>
+      <div class="readout" id="readout" aria-live="polite">
+        <div class="r-name" id="rName">pNRT</div>
+        <div class="r-role" id="rRole">2022 to 2028</div>
+        <div class="r-date" id="rDate"></div>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main class="wrap">
+
+  <section id="now" aria-labelledby="h-exp">
+    <h2 id="h-exp">Experience</h2>
+    <div class="entries">
+
+      <article class="entry c-planned" id="clearview">
+        <div class="when">Jun – Aug 2027<span class="place">San Francisco, CA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>ClearView Healthcare Partners</h3>
+          <p class="role">Incoming Life Sciences Summer Analyst Intern, Investor Support</p>
+          <ul>
+            <li>Joining ClearView, a life sciences strategy consulting firm, in its investor support practice for summer 2027.</li>
+            <li>Commercial due diligence for private equity (PE) and venture capital (VC) clients: assessing the markets, competitors and growth case behind biotech, pharma and healthcare deals before investors commit capital.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-industry" id="takeda">
+        <div class="when">May – Aug 2026<span class="place">Lexington, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>Takeda Pharmaceutical Company</h3>
+          <p class="role">Project Management Intern, Mass Bio Ops Business Strategy Team</p>
+          <ul>
+            <li>Cut the new-project approval cycle by about 15% by moving a two-stage approval process, previously split across separate systems, into one Microsoft Power Apps workflow.</li>
+            <li>Raised project assignment efficiency by 10% with an AI agent that reminds about 50 engineers and managers to update their availability, removing roughly 6 hours a month of manual outreach.</li>
+            <li>Wrote a self-serve guidance pack for process-improvement projects (playbooks, definitions and worked examples, with a focus on financial modeling), aimed at cutting recurring questions to the Project Management Office (PMO) by about 80%.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-industry" id="iucg">
+        <div class="when">Apr 2026 – present<span class="place">Amherst, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>Isenberg Undergraduate Consulting Group (IUCG)</h3>
+          <p class="role">Junior Analyst</p>
+          <ul>
+            <li>Completing IUCG's analyst training curriculum: 30+ consulting workshops, case work, mentorship, and an industry report on AI in pharmaceutical research and development, scoped to a professional statement of work.</li>
+            <li>Preparing for pro bono strategy projects with Fortune 500, startup and nonprofit clients.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-industry" id="oliverwyman">
+        <div class="when">Mar 2026</div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>Oliver Wyman</h3>
+          <p class="role">First-Year Immersion Program</p>
+          <p class="note">Selected for the firm's introduction to management consulting for first-year college students.</p>
+        </div>
+      </article>
+
+      <article class="entry c-work" id="charles">
+        <div class="when">Jan 2023 – present<span class="place">Cambridge, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>The Charles Hotel</h3>
+          <p class="role">Host and In-Room Dining Server</p>
+          <ul>
+            <li>Run guest flow, seating and in-room dining for a high-volume hotel restaurant, coordinating with kitchen and front-of-house staff to keep waits short and orders right at peak service.</li>
+            <li>I've worked 20+ hours a week through school and full time alongside each of my internships.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-work" id="library">
+        <div class="when">May – Aug 2022<span class="place">Revere, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>Revere Public Library</h3>
+          <p class="role">Digital Navigator, City of Revere</p>
+          <p class="note">Helped residents build digital literacy and everyday technology skills.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="h-research">
+    <h2 id="h-research">Research</h2>
+    <div class="entries">
+
+      <article class="entry c-research" id="umass-igem">
+        <div class="when">Sep 2025 – present<span class="place">Amherst, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>iGEM UMass Amherst</h3>
+          <p class="role">Social Media Manager; Wet Lab, Finance and Marketing teams</p>
+          <ul>
+            <li>Running assays and validation for a paper-strip diabetes diagnostic built with the You Lab.</li>
+            <li>Supporting sponsorship outreach, budget planning and merchandise design so the team can fund itself.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-research" id="par">
+        <div class="when">Spring 2026<span class="place">Amherst, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>Success in Science, UMass Amherst</h3>
+          <p class="role">Qualitative Researcher, Participatory Action Research Project</p>
+          <p class="note">Qualitative research on student experiences in university science programs.</p>
+        </div>
+      </article>
+
+      <article class="entry c-research" id="nasa">
+        <div class="when">Jun – Aug 2025<span class="place">Mountain View, CA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>NASA GeneLab, Ames Research Center</h3>
+          <p class="role">Computational Biology Student Trainee (GeneLab for High Schoolers)</p>
+          <ul>
+            <li>Ran end-to-end RNA sequencing (RNA-seq) analysis on spaceflight rodent datasets from NASA's Open Science Data Repository: alignment with STAR, differential expression with DESeq2, and pathway enrichment with GOseq and FGSEA, to find metabolic shifts under microgravity.</li>
+            <li>Presented a NASA-reviewed capstone proposal on spaceflight metabolic pathway changes to agency scientists and the American Society for Gravitational and Space Research.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-research" id="rna">
+        <div class="when">Jul – Aug 2025<span class="place">Albany, NY</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>The RNA Institute, University at Albany</h3>
+          <p class="role">Research Trainee, RNA-seq and Computational Biology</p>
+          <ul>
+            <li>Processed sequencing files on a high-performance computing cluster, then ran alignment, differential gene expression and alternative splicing analysis (rMATS).</li>
+            <li>Applied the pipeline to an Alzheimer's disease project and presented a poster at the institute's RNA Day symposium.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-research" id="boslab">
+        <div class="when">Dec 2023 – Aug 2024<span class="place">Cambridge, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>iGEM BOSLab</h3>
+          <p class="role">Team Vice President; Engineering and Entrepreneurship Lead</p>
+          <ul>
+            <li>Competed in iGEM (International Genetically Engineered Machine), the largest bioengineering competition, against 150+ university teams. We engineered <i>E. coli</i> to produce heparin, a blood thinner usually extracted from animal tissue, and earned a Silver Medal and two special award nominations.</li>
+            <li>Led design of three plasmid constructs carrying the six-enzyme heparin pathway into <i>E. coli</i> Nissle 1917, and built a custom assay when standard methods failed, which led to our nomination for the measurement award.</li>
+            <li>Built the venture case in GEM Startups' Venture Creation Lab (market sizing for a $7B+ heparin market, business model, competitors, go-to-market) and pitched it to biotech investors.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-research" id="wong">
+        <div class="when">Jul – Aug 2023<span class="place">Boston, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>Wilson Wong Lab, Boston University</h3>
+          <p class="role">Research Assistant</p>
+          <ul>
+            <li>Worked on AND-gate CAR-T cells under PhD mentorship: engineered T cells that need two antigens to activate, which makes the therapy more specific to its target.</li>
+            <li>Validated constructs across two design-build-test cycles with PCR, gel electrophoresis and Gibson Assembly, and supported flow cytometry analysis of activation specificity.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-research" id="bdc">
+        <div class="when">Jun – Aug 2023<span class="place">Boston, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>BU Biological Design Center</h3>
+          <p class="role">Student Researcher, STEM Pathways</p>
+          <p class="note">Full-time paid synthetic biology research role; hands-on work with biosensors, 3D printing and laser cutting.</p>
+        </div>
+      </article>
+
+      <article class="entry c-research" id="biobuilder">
+        <div class="when">Mar – May 2023<span class="place">Boston, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>BioBuilder Educational Foundation</h3>
+          <p class="role">Biotechnology Intern, apprenticeship at Ginkgo Bioworks</p>
+          <p class="note">Pre-professional lab training; presented a synthetic biology design poster to academic and industry scientists.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="h-edu">
+    <h2 id="h-edu">Education</h2>
+    <div class="entries">
+
+      <article class="entry c-edu" id="umass">
+        <div class="when">2025 – May 2028<span class="place">Amherst, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>University of Massachusetts Amherst</h3>
+          <p class="role">B.S. Managerial Economics and B.S. Statistics; minors in Biochemistry and Molecular Biology, and Chinese</p>
+          <ul>
+            <li>Christian A. Herter Memorial Scholarship, a full-ride award given to fewer than five first-generation students each year.</li>
+            <li>Coursework: small-business finance, financial accounting, business data analysis, linear algebra, organic chemistry.</li>
+            <li>On a three-year plan to graduate in May 2028.</li>
+          </ul>
+        </div>
+      </article>
+
+      <article class="entry c-edu" id="mites">
+        <div class="when">Jun – Dec 2024<span class="place">Cambridge, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>MIT MITES Semester</h3>
+          <p class="role">Student Scholar, MIT Office of Engineering Outreach Programs</p>
+          <p class="note">Studied geographic information systems (GIS) and spatial analysis; my final project mapped educational disparities and segregation in Boston and Houston.</p>
+        </div>
+      </article>
+
+      <article class="entry c-edu" id="rhs">
+        <div class="when">2020 – 2025<span class="place">Revere, MA</span></div>
+        <div class="what">
+          <h3 class="org"><span class="swatch"></span>Revere High School</h3>
+          <p class="role">High school diploma</p>
+          <p class="note">Dual enrollment at Salem State University and Bunker Hill Community College.</p>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <section aria-labelledby="h-skills">
+    <h2 id="h-skills">Skills</h2>
+    <div class="cols">
+      <div>
+        <h3>Data and code</h3>
+        <p>Python (NumPy, pandas), R, SQL, MATLAB, Jupyter, data visualization</p>
+      </div>
+      <div>
+        <h3>Business</h3>
+        <p>Excel and financial modeling, PowerPoint, Microsoft Power Apps, AI agents and AI research tools</p>
+      </div>
+      <div>
+        <h3>Lab and bioinformatics</h3>
+        <p>PCR, Gibson Assembly, gel electrophoresis, SDS-PAGE, flow cytometry support; RNA-seq with STAR, DESeq2, rMATS, GOseq, FGSEA</p>
+      </div>
+      <div>
+        <h3>Languages</h3>
+        <p>English and Spanish (bilingual), French, Mandarin</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-awards">
+    <h2 id="h-awards">Recognition</h2>
+    <ul class="awards">
+      <li><strong>iGEM Silver Medal and two special award nominations</strong><span>Grand Jamboree, Paris, 2024, with iGEM BOSLab</span></li>
+      <li><strong>Christian A. Herter Memorial Scholarship</strong><span>Full-ride scholarship for first-generation students in Massachusetts</span></li>
+      <li><strong>National Hispanic Recognition Award</strong><span>College Board</span></li>
+      <li><strong>AP Scholar</strong><span>College Board</span></li>
+      <li><strong>Vision of the Graduate Success and Engage Awards</strong><span>Revere High School</span></li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <div class="foot">
+    <p class="big">Let's talk biotech.</p>
+    <p><span class="email" id="email">nicolasrojastaborda@gmail.com</span><button class="copy" id="copyBtn" type="button">Copy email</button></p>
+  </div>
+  <p class="small" style="margin-top:20px">Outside work: boxing, fantasy and horror fiction, and the video essays on horror media I write and produce for YouTube. First-generation college student from Revere, Massachusetts.</p>
+</footer>
+
+<script>
+(function () {
+  // Months counted from Jan 2022 (0). The ring spans Jan 2022 to Jul 2028 (78 months).
+  var SPAN = 78;
+  var d = new Date();
+  var NOW = Math.max(0, Math.min(SPAN, (d.getFullYear() - 2022) * 12 + d.getMonth() + d.getDate() / 31));
+
+  // c: research | industry | edu | work ; ongoing: runs to "now" then stops (end is a cap)
+  var F = [
+    { id: "library",     c: "work",     s: 4,  e: 8,    n: "Revere Public Library", r: "Digital Navigator", t: "May – Aug 2022" },
+    { id: "charles",     c: "work",     s: 12, e: 77,   n: "The Charles Hotel", r: "Host and in-room dining", t: "Jan 2023 – present", ongoing: true },
+    { id: "biobuilder",  c: "research", s: 14, e: 17,   n: "BioBuilder", r: "Biotechnology intern", t: "Mar – May 2023" },
+    { id: "bdc",         c: "research", s: 17, e: 20,   n: "BU Biological Design Center", r: "Student researcher", t: "Jun – Aug 2023" },
+    { id: "wong",        c: "research", s: 18, e: 20,   n: "Wilson Wong Lab", r: "AND-gate CAR-T research", t: "Jul – Aug 2023", label: "Wong Lab", sub: "CAR-T" },
+    { id: "boslab",      c: "research", s: 23, e: 32,   n: "iGEM BOSLab", r: "VP; engineering and entrepreneurship lead", t: "Dec 2023 – Aug 2024", label: "iGEM BOSLab", sub: "Silver Medal" },
+    { id: "rhs",         c: "edu",      s: 0,  e: 17.8, n: "Revere High School", r: "Diploma, dual enrollment", t: "2020 – 2025", hidden: true },
+    { id: "mites",       c: "edu",      s: 29, e: 36,   n: "MIT MITES Semester", r: "Student scholar", t: "Jun – Dec 2024" },
+    { id: "nasa",        c: "research", s: 41, e: 44,   n: "NASA GeneLab", r: "Computational biology trainee", t: "Jun – Aug 2025", label: "NASA GeneLab", sub: "RNA-seq" },
+    { id: "rna",         c: "research", s: 42, e: 44,   n: "RNA Institute", r: "RNA-seq research trainee", t: "Jul – Aug 2025" },
+    { id: "umass",       c: "edu",      s: 44, e: 76.5, n: "UMass Amherst", r: "Managerial Econ and Statistics", t: "2025 – May 2028" },
+    { id: "umass-igem",  c: "research", s: 44, e: 76.5, n: "iGEM UMass Amherst", r: "Wet lab, finance, marketing", t: "Sep 2025 – present", ongoing: true },
+    { id: "par",         c: "research", s: 49, e: 53,   n: "Success in Science", r: "Qualitative researcher", t: "Spring 2026" },
+    { id: "oliverwyman", c: "industry", s: 50, e: 51,   n: "Oliver Wyman", r: "First-Year Immersion Program", t: "Mar 2026" },
+    { id: "iucg",        c: "industry", s: 51, e: 76.5, n: "IUCG", r: "Junior Analyst", t: "Apr 2026 – present", ongoing: true },
+    { id: "takeda",      c: "industry", s: 52, e: 55.5, n: "Takeda", r: "Project management intern", t: "May – Aug 2026", label: "Takeda", sub: "Bio Ops" },
+    { id: "clearview",   c: "industry", s: 65.7, e: 67.7, n: "ClearView Healthcare Partners", r: "PE and VC diligence, investor support", t: "Jun – Aug 2027", label: "ClearView", sub: "PE/VC diligence" }
+  ].filter(function (f) { return !f.hidden; });
+
+  var NS = "http://www.w3.org/2000/svg";
+  var svg = document.getElementById("map");
+  var box = document.getElementById("mapBox");
+  var CX = 430, CY = 380, RB = 196, T0 = 212, TS = 17, TW = 13;
+
+  function ang(m) { return (m / SPAN) * 360; }
+  function pt(r, a) { var t = a * Math.PI / 180; return [CX + r * Math.sin(t), CY - r * Math.cos(t)]; }
+  function P(p) { return p[0].toFixed(2) + " " + p[1].toFixed(2); }
+  function el(tag, attrs, parent) {
+    var n = document.createElementNS(NS, tag);
+    for (var k in attrs) n.setAttribute(k, attrs[k]);
+    (parent || svg).appendChild(n);
+    return n;
+  }
+  function arrow(rIn, rOut, a0, a1, head) {
+    var span = a1 - a0;
+    var h = head ? Math.min(2.6, span * 0.5) : 0;
+    var b = a1 - h, rMid = (rIn + rOut) / 2;
+    var large = (b - a0) > 180 ? 1 : 0;
+    return "M" + P(pt(rOut, a0)) + " A" + rOut + " " + rOut + " 0 " + large + " 1 " + P(pt(rOut, b)) +
+      " L" + P(pt(rMid, a1)) + " L" + P(pt(rIn, b)) +
+      " A" + rIn + " " + rIn + " 0 " + large + " 0 " + P(pt(rIn, a0)) + " Z";
+  }
+
+  // Resolve visible extent, then assign tracks greedily (lowest free track).
+  F.forEach(function (f) {
+    f.vs = f.s;
+    f.ve = f.ongoing ? Math.max(f.s + 1, Math.min(f.e, NOW)) : f.e;
+    if (f.ve - f.vs < 0.9) f.ve = f.vs + 0.9;
+  });
+  var tracks = [];
+  F.slice().sort(function (a, b) { return a.vs - b.vs || (b.ve - b.vs) - (a.ve - a.vs); }).forEach(function (f) {
+    for (var i = 0; ; i++) {
+      if (!tracks[i] || tracks[i] <= f.vs - 0.4) { f.track = i; tracks[i] = f.ve; break; }
+    }
+  });
+
+  // Backbone, ticks, years
+  el("circle", { cx: CX, cy: CY, r: RB, class: "backbone" });
+  for (var m = 0; m <= SPAN; m += 3) {
+    if (m === SPAN) break;
+    var yr = m % 12 === 0, a = ang(m);
+    el("line", { x1: pt(RB, a)[0], y1: pt(RB, a)[1], x2: pt(RB - (yr ? 12 : 5), a)[0], y2: pt(RB - (yr ? 12 : 5), a)[1], class: "tick" + (yr ? " year" : "") });
+    if (yr && m > 0) {
+      var lp = pt(RB - 30, a);
+      var tl = el("text", { x: lp[0], y: lp[1] + 5, "text-anchor": "middle", class: "year-label" });
+      tl.textContent = String(2022 + m / 12);
+    }
+  }
+  // ori marker at the top: where it all starts
+  var op = pt(RB, 0);
+  el("rect", { x: op[0] - 5, y: op[1] - 5, width: 10, height: 10, class: "ori", transform: "rotate(45 " + op[0] + " " + op[1] + ")" });
+  var ol = el("text", { x: CX + 14, y: CY - RB + 32, "text-anchor": "start", class: "ori-label" });
+  ol.innerHTML = 'ori <tspan>Revere, 2022</tspan>';
+
+  // Today marker
+  var outer = T0 + TS * (tracks.length - 1) + TW;
+  var na = ang(NOW);
+  el("line", { x1: pt(RB - 14, na)[0], y1: pt(RB - 14, na)[1], x2: pt(outer + 6, na)[0], y2: pt(outer + 6, na)[1], class: "now-line" });
+  var nl = pt(outer + 14, na), ns = Math.sin(na * Math.PI / 180);
+  var nt = el("text", { x: nl[0], y: nl[1] + 5, "text-anchor": ns < -0.3 ? "end" : (ns > 0.3 ? "start" : "middle"), class: "now-label" });
+  nt.textContent = "Today";
+
+  // Features
+  var gAll = el("g", {});
+  var order = F.slice().sort(function (a, b) { return a.vs - b.vs; });
+  order.forEach(function (f, i) {
+    var rIn = T0 + TS * f.track, rOut = rIn + TW;
+    var g = el("a", { href: "#" + f.id, class: "feat", "data-id": f.id, "aria-label": f.n + ", " + f.r + ", " + f.t }, gAll);
+    g.style.animationDelay = (500 + i * 55) + "ms";
+    var col = "var(--" + f.c + ")";
+    var a0 = ang(f.vs), a1 = ang(f.ve), an = ang(NOW);
+    if (f.vs >= NOW) {
+      el("path", { d: arrow(rIn, rOut, a0, a1, true), class: "planned", fill: col, style: "stroke:" + col }, g);
+    } else if (f.ve > NOW && !f.ongoing) {
+      el("path", { d: arrow(rIn, rOut, a0, an, false), fill: col }, g);
+      el("path", { d: arrow(rIn, rOut, an, a1, true), class: "planned", fill: col, style: "stroke:" + col }, g);
+    } else {
+      el("path", { d: arrow(rIn, rOut, a0, a1, true), fill: col }, g);
+    }
+    f.node = g;
+    f.mid = (a0 + a1) / 2; f.rOut = rOut;
+  });
+
+  // Labels for the anchor features
+  var RL = outer + 30;
+  F.forEach(function (f) {
+    if (!f.label) return;
+    var a = f.mid, p1 = pt(f.rOut + 3, a), p2 = pt(RL - 6, a);
+    el("line", { x1: p1[0], y1: p1[1], x2: p2[0], y2: p2[1], class: "leader" });
+    var s = Math.sin(a * Math.PI / 180), anchor = s > 0.25 ? "start" : (s < -0.25 ? "end" : "middle");
+    var lp = pt(RL, a), dy = Math.cos(a * Math.PI / 180) < -0.5 ? 16 : (Math.cos(a * Math.PI / 180) > 0.5 ? -14 : 4);
+    var t = el("text", { x: lp[0], y: lp[1] + dy, "text-anchor": anchor, class: "flabel" });
+    var t1 = document.createElementNS(NS, "tspan"); t1.textContent = f.label; t.appendChild(t1);
+    var t2 = document.createElementNS(NS, "tspan"); t2.setAttribute("x", lp[0]); t2.setAttribute("dy", "17"); t2.setAttribute("class", "sub"); t2.textContent = f.sub; t.appendChild(t2);
+  });
+
+  // Narrow screens: crop the viewBox to the ring (labels hidden in CSS)
+  var mq = window.matchMedia("(max-width: 860px)");
+  function fit() {
+    var pad = outer + 50;
+    svg.setAttribute("viewBox", mq.matches ? (CX - pad) + " " + (CY - pad) + " " + (2 * pad) + " " + (2 * pad) : "40 60 800 660");
+  }
+  fit();
+  if (mq.addEventListener) mq.addEventListener("change", fit);
+
+  // Readout + linking between map and entries
+  var rName = document.getElementById("rName"), rRole = document.getElementById("rRole"), rDate = document.getElementById("rDate");
+  var byId = {}; F.forEach(function (f) { byId[f.id] = f; });
+  function show(f) {
+    F.forEach(function (x) { x.node.classList.toggle("active", x === f); });
+    box.classList.toggle("has-active", !!f);
+    document.querySelectorAll(".entry.lit").forEach(function (n) { n.classList.remove("lit"); });
+    if (f) {
+      rName.textContent = f.n; rRole.textContent = f.r; rDate.textContent = f.t;
+      var e = document.getElementById(f.id); if (e) e.classList.add("lit");
+    } else {
+      rName.textContent = "pNRT"; rRole.textContent = "2022 to 2028"; rDate.textContent = F.length + " features";
+    }
+  }
+  show(null);
+  F.forEach(function (f) {
+    f.node.addEventListener("mouseenter", function () { show(f); });
+    f.node.addEventListener("focus", function () { show(f); });
+    f.node.addEventListener("mouseleave", function () { show(null); });
+    f.node.addEventListener("blur", function () { show(null); });
+    f.node.addEventListener("click", function (ev) {
+      ev.preventDefault();
+      var e = document.getElementById(f.id);
+      if (e) { e.scrollIntoView({ behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth", block: "center" }); e.classList.add("lit"); setTimeout(function () { e.classList.remove("lit"); }, 1600); }
+    });
+  });
+  document.querySelectorAll(".entry").forEach(function (e) {
+    var f = byId[e.id]; if (!f) return;
+    e.addEventListener("mouseenter", function () { F.forEach(function (x) { x.node.classList.toggle("active", x === f); }); box.classList.add("has-active"); rName.textContent = f.n; rRole.textContent = f.r; rDate.textContent = f.t; });
+    e.addEventListener("mouseleave", function () { show(null); });
+  });
+
+  // One load moment: the backbone draws, then features land in order.
+  if (!matchMedia("(prefers-reduced-motion: reduce)").matches) {
+    svg.classList.add("boot");
+    setTimeout(function () { svg.classList.remove("boot"); }, 2200);
+  }
+
+  // Copy email
+  var btn = document.getElementById("copyBtn");
+  btn.addEventListener("click", function () {
+    var txt = document.getElementById("email").textContent;
+    function sel() { var r = document.createRange(); r.selectNodeContents(document.getElementById("email")); var s = getSelection(); s.removeAllRanges(); s.addRange(r); }
+    try {
+      navigator.clipboard.writeText(txt).then(function () { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy email"; }, 1800); }, sel);
+    } catch (e) { sel(); }
+  });
+})();
+</script>
+
+</body>
+</html>
